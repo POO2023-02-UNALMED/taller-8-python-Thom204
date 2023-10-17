@@ -6,15 +6,12 @@ class Futbolista(Persona, Deportista):
 
     def __init__(self, nombre, edad, altura, sexo, añosPracticando, golesMarcados, tarjetasRojas, piernaHabil):
         Persona.__init__(self, nombre, edad, altura, sexo)
-        Deportista.__init__(self, "futbol", añosPracticando)
+        Deportista.__init__(self, _, añosPracticando)
         self.__golesMarcados = golesMarcados
         self.__tarjetasRojas = tarjetasRojas
         self.__piernaHabil = piernaHabil
         Futbolista.listaFutbolistas.append(self)
     
-    def getNombre(self):
-        super.getNombre()
-
     def get_golesMarcados(self):
         return self.__golesMarcados
 
@@ -34,4 +31,4 @@ class Futbolista(Persona, Deportista):
         self.__piernaHabil = piernaHabil
 
     def __str__(self):
-        return f"Mi nombre es {self.get_nombre()}, soy profesional en el deporte {self.get_deporte()}. Tengo {self.get_edad()} años de edad y llevo {self.get_añosPracticando()} años en el deporte"
+        return f"Mi nombre es {self.getNombre()}, soy profesional en el deporte {self.getDeporte()}. Tengo {self.getEdad()} años de edad y llevo {self.getAñosPracticando()} años en el deporte"
