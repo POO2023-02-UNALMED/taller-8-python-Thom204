@@ -12,22 +12,22 @@ class Futbolista(Persona, Deportista):
         self.__piernaHabil = piernaHabil
         Futbolista.listaFutbolistas.append(self)
     
-    def get_golesMarcados(self):
+    def getGolesMarcados(self):
         return self.__golesMarcados
 
-    def set_golesMarcados(self, golesMarcados):
+    def setGolesMarcados(self, golesMarcados):
         self.__golesMarcados = golesMarcados
 
-    def get_tarjetasRojas(self):
+    def getTarjetasRojas(self):
         return self.__tarjetasRojas
 
-    def set_tarjetasRojas(self, tarjetasRojas):
+    def setTarjetasRojas(self, tarjetasRojas):
         self.__tarjetasRojas = tarjetasRojas
 
-    def get_piernaHabil(self):
+    def getPiernaHabil(self):
         return self.__piernaHabil
 
-    def set_piernaHabil(self, piernaHabil):
+    def setPiernaHabil(self, piernaHabil):
         self.__piernaHabil = piernaHabil
 
     def __str__(self):
