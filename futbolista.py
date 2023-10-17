@@ -11,6 +11,9 @@ class Futbolista(Persona, Deportista):
         self.__tarjetasRojas = tarjetasRojas
         self.__piernaHabil = piernaHabil
         Futbolista.listaFutbolistas.append(self)
+    
+    def getNombre(self):
+        return self.__nombre
 
     def get_golesMarcados(self):
         return self.__golesMarcados
