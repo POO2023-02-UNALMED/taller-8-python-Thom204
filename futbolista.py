@@ -13,7 +13,7 @@ class Futbolista(Persona, Deportista):
         Futbolista.listaFutbolistas.append(self)
     
     def getNombre(self):
-        return self.__nombre
+        super.getNombre()
 
     def get_golesMarcados(self):
         return self.__golesMarcados
